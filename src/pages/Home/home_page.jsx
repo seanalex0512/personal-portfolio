@@ -7,16 +7,35 @@ import FollowMe from './follow_me';
 
 const HomePage = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isWhite, setIsWhite] = useState(false); // State to track logo color
 
   useEffect(() => {
     setIsVisible(true);
+
+    const handleScroll = () => {
+      const projectsSection = document.getElementById('projects');
+      const projectsSectionRect = projectsSection.getBoundingClientRect();
+
+      // Change logo color to white when the projects section is in view
+      if (projectsSectionRect.top <= 0 && projectsSectionRect.bottom >= 0) {
+        setIsWhite(true);
+      } else {
+        setIsWhite(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
     <div className="main-container">
       {/* Developer logo in top left corner */}
       <div className="logo-container">
-        <div className="developer-logo">
+        <div className={`developer-logo ${isWhite ? 'white-logo' : ''}`}>
           <span className="logo-text">{'</>'}</span>
         </div>
       </div>

@@ -1,79 +1,105 @@
-/* follow_me.css */
-.social-container {
-    display: flex;
+.connect-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: #666;
+  margin-bottom: -1.5rem;
+}
+
+.intro {
+  font-size: 4rem;
+  font-weight: bold;
+  color: black;
+}
+
+.contact-button {
+  padding: 0.75rem 1.5rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #333;
+}
+
+.local-time {
+  margin-top: 3rem;
+  font-size: 0.875rem;
+  color: #999;
+}
+
+/* Footer styles */
+.footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.footer-left {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.name {
+  font-weight: bold;
+  color: #000;
+}
+
+.designation {
+  font-weight: normal;
+  color: #666;
+}
+
+.footer-right {
+  display: flex;
+  gap: 2rem;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .connect-container {
+    padding: 1.5rem;
+  }
+  
+  .footer {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #ffffff; /* White background */
-    padding: 2rem;
-    text-align: center;
-    border-top: 1px solid #eaeaea; /* Subtle border at the top */
+    align-items: flex-start;
   }
-  
-  .social-title {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #1d1d1f;
-    font-family: 'SF Pro Display', monospace;
-  }
-  
-  .social-description {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: #555;
-  }
-  
-  .social-links {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    margin-bottom: 2rem;
-  }
-  
-  .social-icon {
-    width: 50px;
-    height: 50px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .social-icon:hover {
-    transform: scale(1.1);
-    filter: brightness(1.2);
-  }
-  
-  .social-footer {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.5;
+
+  .footer-right {
     margin-top: 1rem;
   }
-  
-  .social-footer p {
-    margin: 0.5rem 0;
-  }
-  
-  @media (max-width: 768px) {
-    .social-title {
-      font-size: 2rem;
-    }
-  
-    .social-description {
-      font-size: 1rem;
-    }
-  
-    .social-links {
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-  
-    .social-icon {
-      width: 40px;
-      height: 40px;
-    }
-  
-    .social-footer {
-      font-size: 0.9rem;
-    }
-  }
+}

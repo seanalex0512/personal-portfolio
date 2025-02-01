@@ -1,3 +1,4 @@
+/* General Page Styles */
 .projects-page {
   background-color: black;
   color: white;
@@ -6,6 +7,7 @@
   padding: 50px 20px;
 }
 
+/* Title & Subtitle */
 .projects-title {
   font-size: 48px;
   font-weight: bold;
@@ -19,51 +21,44 @@
   line-height: 1.5;
 }
 
+/* Flickity Carousel Container */
 .projects-slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
   width: 80%;
   margin: 0 auto;
+  background: black;
 }
 
-.project-main {
+/* Individual Slide Styles */
+.gallery-cell {
+  width: 66%;
+  height: 700px;
+  margin: 20px;
   background: #1c1c1e;
-  padding: 20px;
   border-radius: 12px;
-  width: 70%;
-  text-align: center;
-  position: relative;
-  transition: transform 0.5s ease-in-out;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
 }
 
-.nav-button {
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 32px;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
+/* Full opacity for active slide */
+.gallery-cell.active-slide {
+  opacity: 1;
 }
 
-.left {
-  left: -40px;
-}
-
-.right {
-  right: -40px;
-}
-
+/* Slide Image */
 .project-image {
   width: 100%;
+  height: 100%;
   border-radius: 8px;
   margin-bottom: 15px;
+  object-fit: contain;
 }
 
+/* Slide Text */
 .project-title {
   font-size: 24px;
   font-weight: 600;
@@ -75,6 +70,7 @@
   margin-bottom: 15px;
 }
 
+/* "Learn More" Button */
 .project-link {
   color: #007aff;
   text-decoration: none;
@@ -84,3 +80,23 @@
 .project-link:hover {
   text-decoration: underline;
 }
+
+/* Flickity Navigation Buttons */
+.flickity-prev-next-button {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.flickity-prev-next-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Flickity Dots */
+.flickity-page-dots .dot {
+  background: white;
+  opacity: 0.5;
+}
+
+

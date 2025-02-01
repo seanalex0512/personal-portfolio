@@ -28,6 +28,11 @@
   transition: all 0.3s ease;
 }
 
+.developer-logo.white-logo {
+  color: white; /* Change to white when scrolled */
+  text-shadow: none; /* Remove shadow for better visibility */
+}
+
 .developer-logo:hover {
   transform: rotate(360deg);
   color: #0066ff;
