@@ -1,0 +1,78 @@
+/* navbar.css */
+.navbar {
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: auto;
+    max-width: 90%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem; /* Reduced gap to accommodate the new button */
+    align-items: center;
+}
+
+.nav-link {
+    background: none;
+    border: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+    font-size: 0.95rem;
+    color: #1d1d1f;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    opacity: 0.8;
+}
+
+.nav-link:hover {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+.nav-link.active {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        top: 1rem;
+        padding: 0.6rem 1.5rem;
+    }
+    
+    .nav-links {
+        gap: 1.2rem; /* Adjusted for mobile view */
+    }
+    
+    .nav-link {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        width: 85%;
+        padding: 0.6rem 1rem;
+    }
+    
+    .nav-links {
+        gap: 1rem;
+    }
+}
