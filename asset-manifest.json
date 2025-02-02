@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/personal-portfolio/static/css/main.9f179a48.css",
+    "main.js": "/personal-portfolio/static/js/main.e8a5bd93.js",
+    "static/js/488.146287e4.chunk.js": "/personal-portfolio/static/js/488.146287e4.chunk.js",
+    "static/media/outdoor.PNG": "/personal-portfolio/static/media/outdoor.20ddd58fdb764411d459.PNG",
+    "static/media/surfing.JPG": "/personal-portfolio/static/media/surfing.31541a5498ee281b09fd.JPG",
+    "static/media/climbing.JPEG": "/personal-portfolio/static/media/climbing.7a6535ca91128ac9f60a.JPEG",
+    "static/media/bjj.jpg": "/personal-portfolio/static/media/bjj.91ac4f5f9eacd0857995.jpg",
+    "static/media/screenshotmac.jpg": "/personal-portfolio/static/media/screenshotmac.138c4372d8ce376eab6d.jpg",
+    "static/media/screenshot3.jpg": "/personal-portfolio/static/media/screenshot3.173602d688287606042d.jpg",
+    "static/media/screenshot2.jpg": "/personal-portfolio/static/media/screenshot2.0fec8efe0ed3ac4c304b.jpg",
+    "static/media/github.png": "/personal-portfolio/static/media/github.05f6c17b8cd04c28456f.png",
+    "static/media/linkedin.png": "/personal-portfolio/static/media/linkedin.f249b38224ca41a0b909.png",
+    "index.html": "/personal-portfolio/index.html",
+    "main.9f179a48.css.map": "/personal-portfolio/static/css/main.9f179a48.css.map",
+    "main.e8a5bd93.js.map": "/personal-portfolio/static/js/main.e8a5bd93.js.map",
+    "488.146287e4.chunk.js.map": "/personal-portfolio/static/js/488.146287e4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f179a48.css",
+    "static/js/main.e8a5bd93.js"
+  ]
+}
