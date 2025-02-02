@@ -61,13 +61,14 @@ const HomePage = () => {
         </div>
       </section>
 
+      <section id="projects">
+        <ProjectsPage />
+      </section>
+
       <section id="about">
         <AboutPage />
       </section>
 
-      <section id="projects">
-        <ProjectsPage />
-      </section>
 
       <section id="follow">
         <FollowMe />
