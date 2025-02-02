@@ -54,7 +54,7 @@ const HomePage = () => {
       
         <div className={`hero-content ${isVisible ? 'fade-in' : ''}`}>
           <h2 className="greeting">Hi 👋, I am</h2>
-          <h1 className="title">Sean </h1>
+          <h1 className="title">Sean Alexander </h1>
           <div className="glow-text">Software Developer</div>
         
           <button className="cta-button">View My Work</button>
