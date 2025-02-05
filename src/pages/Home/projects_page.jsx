@@ -28,7 +28,7 @@ const projects = [
   },
   {
     title: 'TM Smart Building',
-    description: 'Designed a smart all-in-one building system prototype for TM, integrating advanced features to enhance automation, energy efficiency, and overall building management.',
+    description: 'Designed a smart all-in-one building system prototype for TM, integrating advanced features to enhance automation, oversee overall building management, and check the status of their cell towers',
     link: 'https://www.figma.com/design/mdURxLWbiIkOA36QTJcd4M/TM-Smart-Management-System?node-id=0-1&t=TKl97EpKv4IVNEZc-1',
     image: TM,
     tags: ['Figma'],
