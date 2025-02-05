@@ -1,12 +1,11 @@
-// navbar.jsx
 import React from 'react';
 import './navbar.css';
 
 const Navbar = () => {
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -21,16 +20,16 @@ const Navbar = () => {
             Home
           </button>
           <button
-            onClick={() => scrollToSection('about')}
-            className="nav-link"
-          >
-            About
-          </button>
-          <button
             onClick={() => scrollToSection('projects')}
             className="nav-link"
           >
             Projects
+          </button>
+          <button
+            onClick={() => scrollToSection('about')}
+            className="nav-link"
+          >
+            About
           </button>
           <button
             onClick={() => scrollToSection('follow')}

@@ -23,7 +23,7 @@
 
 .nav-links {
     display: flex;
-    gap: 1.5rem; /* Reduced gap to accommodate the new button */
+    gap: 1.5rem; 
     align-items: center;
 }
 

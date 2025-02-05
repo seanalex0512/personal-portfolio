@@ -25,11 +25,17 @@ const HomePage = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  // Function to scroll to the projects section
+  const handleScrollToProjects = () => {
+    const projectsSection = document.getElementById('projects');
+    projectsSection.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <div className="main-container">
@@ -41,7 +47,7 @@ const HomePage = () => {
       </div>
 
       <Navbar />
-    
+
       {/* Enhanced Hero Section */}
       <section id="hero" className="main-content center-text">
         <div className="hero-background">
@@ -51,13 +57,16 @@ const HomePage = () => {
             <div className="shape shape3"></div>
           </div>
         </div>
-      
+
         <div className={`hero-content ${isVisible ? 'fade-in' : ''}`}>
           <h2 className="greeting">Hi 👋, I am</h2>
           <h1 className="title">Sean Alexander </h1>
           <div className="glow-text">Software Developer</div>
-        
-          <button className="cta-button">View My Work</button>
+
+          {/* Updated CTA button */}
+          <button className="cta-button" onClick={handleScrollToProjects}>
+            View My Work
+          </button>
         </div>
       </section>
 
@@ -69,12 +78,11 @@ const HomePage = () => {
         <AboutPage />
       </section>
 
-
       <section id="follow">
         <FollowMe />
       </section>
     </div>
   );
-}
-      
+};
+
 export default HomePage;

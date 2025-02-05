@@ -77,26 +77,28 @@ const AboutPage = () => {
         </div>
       
         <div className="text-section">
-          <h2 className="section-title">A Sports & Developer Enthusiast</h2>
-        
-          <p className="main-text">
-            I'm a software developer who loves building cool things—whether it's a sleek mobile app, a clean and functional website, or just tinkering with new tech for fun. Right now, I'm deep into Flutter, learning how to craft beautiful, cross-platform apps.
-          </p>
-        
-          <p className="main-text">
-            I also have a curiosity for digital forensics (think NIST guidelines and the science behind uncovering digital evidence) and love exploring how tech can solve real-world problems. When I'm not coding, you'll probably find me diving into new hobbies, tweaking my portfolio, or geeking out over the latest innovations in software development.
-          </p>
-        
-          <p className="main-text">
-            Check out my work, browse my resume, or just say hi—I'm always up for a good tech chat!
-          </p>
-        
-          <h3 className="sub-section">Finally, some quick bits about me.</h3>
-        
-          <p className="closing-text">
-            One last thing, I'm available for freelance work, so feel free to reach out and say hello! 
-          </p>
-        </div>
+  <h2 className="section-title">A Sports & Developer Enthusiast</h2>
+
+  <p className="main-text">
+    From a young age, I was fascinated by technology—taking gadgets apart and putting them back together just to see how they worked. That curiosity eventually led me to study Computer Science in college, paving the way for my journey as a Software Developer. Now, I’m passionate about translating ideas into clean, efficient code and delivering intuitive digital experiences. I focus on building fast, elegant, and accessible solutions that enhance user experiences.
+  </p>
+
+  <p className="main-text">
+    A problem-solver at heart, I thrive on collaboration, continuous learning, and bringing a touch of creativity to every project. Whether it's developing sleek mobile apps or crafting seamless web applications, I enjoy tackling challenges with a thoughtful and innovative approach.
+  </p>
+
+  <h3 className="sub-section">My Personal Coaching</h3>
+
+  <p className="main-text">
+    Beyond coding, I’m also a personal coach for swimming and rock climbing, as well as a private math tutor. Helping others achieve their goals and milestones gives me immense fulfillment, and I love being part of their growth journey.
+  </p>
+
+  <p className="main-text">
+    As a sports fanatic, I thrive on competition as a way to push myself and continuously improve. I’ve participated in several sports competitions, including swimming, football, rock climbing, and Brazilian Jiu-Jitsu.
+  </p>
+
+</div>
+
       </div>
     </div>
   );

@@ -30,7 +30,6 @@ const FollowMe = () => {
     <div className="connect-container">
       <p className="subtitle">Have a project?</p>
       <h1 className="intro">Let's Connect!</h1>
-      <button className="contact-button">Talk with me</button>
       <p className="local-time">My local time: {localTime}</p>
       <footer className="footer">
         <div className="footer-left">
