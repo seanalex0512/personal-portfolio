@@ -162,8 +162,7 @@
   position: relative;
   width: 100%;
   max-width: 8em;
-  margin: 0 auto;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
   font-size: 72px;
   font-weight: 600;
   color: #1d1d1f;
@@ -174,6 +173,11 @@
   animation: typewriterText 3s steps(14) infinite,
              blinkTextCursor 500ms steps(44) infinite;
   border-right: 2px solid rgba(0, 0, 0, 0.75);
+}
+
+.name-container {
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .glow-text {
@@ -193,6 +197,7 @@
   animation: wave 3s linear infinite;
   filter: drop-shadow(0 0 20px rgba(78, 145, 255, 0.6));
   letter-spacing: -0.02em;
+  margin-top: 0;
   margin-bottom: 2rem;
   text-align: center;
   width: 100%;
@@ -273,21 +278,27 @@
     padding: 1rem;
   }
 
+  .greeting {
+    font-size: 20px;
+    padding: 0 1rem;
+    margin-bottom: 1.5rem; /* Consistent margin */
+  }
+
   .title {
-    font-size: 36px;
+    font-size: 42px;
+    white-space: nowrap;
+    margin: 0 auto 1.5rem; /* Consistent margin top and bottom */
     max-width: 100%;
-    white-space: normal;
-    margin: 1rem auto;
+    overflow: hidden;
+    animation: typewriterText 3s steps(14) infinite,
+               blinkTextCursor 500ms steps(44) infinite;
   }
 
   .glow-text {
     font-size: 28px;
     padding: 0 1rem;
-  }
-
-  .greeting {
-    font-size: 20px;
-    padding: 0 1rem;
+    margin-top: 0; /* Remove any default margin */
+    margin-bottom: 1.5rem; /* Consistent margin */
   }
 
   #hero {
@@ -306,18 +317,36 @@
   .developer-logo {
     font-size: 1.5rem;
   }
+  
+  .cta-button {
+    margin-top: 1.5rem; /* Consistent with other margins */
+  }
 }
 
 @media (max-width: 480px) {
+  .greeting {
+    font-size: 18px;
+    margin-bottom: 1.2rem; /* Slightly smaller but consistent margin */
+  }
+
   .title {
-    font-size: 28px;
+    font-size: 36px;
+    max-width: 100%;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0 auto 1.2rem; /* Consistent margin */
+    animation: typewriterText 3s steps(14) infinite,
+               blinkTextCursor 500ms steps(44) infinite;
   }
 
   .glow-text {
     font-size: 24px;
+    margin-bottom: 1.2rem; /* Consistent margin */
   }
-
-  .greeting {
-    font-size: 18px;
+  
+  .cta-button {
+    margin-top: 1.2rem; /* Consistent with other margins */
+    padding: 0.8rem 1.8rem; /* Slightly smaller button on very small screens */
+    font-size: 1rem;
   }
 }
