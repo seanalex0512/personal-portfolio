@@ -27,11 +27,11 @@ const projects = [
     tags: ['Webflow'],
   },
   {
-    title: 'TM Smart Building',
-    description: 'Designed a smart all-in-one building system prototype for TM, integrating advanced features to enhance automation, oversee overall building management, and check the status of their cell towers',
-    link: 'https://www.figma.com/design/mdURxLWbiIkOA36QTJcd4M/TM-Smart-Management-System?node-id=0-1&t=TKl97EpKv4IVNEZc-1',
+    title: 'Bumi Panel Cell Tower Management System',
+    description: 'Designed a cell tower management system prototype for Bumi Panel, integrating advanced features to enhance automation, oversee overall building management, and check the status of their cell towers.',
+    link: '#',
     image: TM,
-    tags: ['Figma'],
+    tags: ['Retool', 'JavaScript', 'SQL'],
   },
   {
     title: 'INTI Campus Booking Facility App',
@@ -70,17 +70,14 @@ const ProjectsPage = () => {
       friction: 0.28,
       on: {
         settle: function () {
-          // Get all slides
           const slides = carouselRef.current.querySelectorAll('.gallery-cell');
-
           slides.forEach((slide, index) => {
-            // Check if it's the selected slide
             if (index === flickityInstance.selectedIndex) {
               slide.classList.add('active-slide');
-              slide.style.opacity = 1; // Set active slide opacity to 1
+              slide.style.opacity = 1;
             } else {
               slide.classList.remove('active-slide');
-              slide.style.opacity = 0.5; // Set inactive slide opacity to 0.5
+              slide.style.opacity = 0.5;
             }
           });
         },
@@ -89,7 +86,7 @@ const ProjectsPage = () => {
 
     const initialSlides = carouselRef.current.querySelectorAll('.gallery-cell');
     if (initialSlides.length > 0) {
-      initialSlides[0].style.opacity = 1; // Ensure the first slide is fully opaque
+      initialSlides[0].style.opacity = 1;
     }
 
     return () => {
@@ -110,15 +107,13 @@ const ProjectsPage = () => {
             <h2 className="project-title">{project.title}</h2>
             <p className="project-description">{project.description}</p>
 
-            {/* Technology Tags */}
             <div className="project-tags">
               {project.tags.map((tag, tagIndex) => (
                 <span key={tagIndex} className="project-tag">{tag}</span>
               ))}
             </div>
 
-            {/* Conditional Rendering for "Still In Test Mode" */}
-            {project.title === 'Invoice Generator' ? (
+            {(project.title === 'Invoice Generator' || project.title === 'Bumi Panel Cell Tower Management System') ? (
               <span className="test-mode">Still In Test Mode</span>
             ) : (
               <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
