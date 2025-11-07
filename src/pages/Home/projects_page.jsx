@@ -10,22 +10,9 @@ import TM from '../../Assets/TM.png';
 import finance1 from '../../Assets/finance1.png';
 import booking from '../../Assets/booking.png';
 import ecommerce from '../../Assets/ecommerce.png';
+import movies from '../../Assets/movies.png';
 
 const projects = [
-  {
-    title: 'Invoice Generator',
-    description: 'An Invoice Generator that allows you to create and download custom invoices.',
-    link: '#',
-    image: invoice1,
-    tags: ['React', 'Tailwind', 'JavaScript', 'WordPress'],
-  },
-  {
-    title: 'Linconlite',
-    description: 'A freelance project for an Electrical Engineering company that required a modern and sleek design that matched the company theme.',
-    link: 'https://liconlite.webflow.io/',
-    image: linconlite,
-    tags: ['Webflow'],
-  },
   {
     title: 'Bumi Panel Cell Tower Management System',
     description: 'Designed a cell tower management system prototype for Bumi Panel, integrating advanced features to enhance automation, oversee overall building management, and check the status of their cell towers.',
@@ -34,12 +21,21 @@ const projects = [
     tags: ['Retool', 'JavaScript', 'SQL'],
   },
   {
-    title: 'INTI Campus Booking Facility App',
-    description: 'Developed an INTI Campus Booking Facility App, enabling students and staff to seamlessly book campus facilities, manage reservations, and improve overall accessibility.',
-    link: 'https://github.com/seanalex0512/BookingFacilityApp.git',
-    image: booking,
-    tags: ['Flutter', 'Firebase', 'Authentication', 'Material-UI', 'Figma'],
+    title: 'Invoice Generator',
+    description: 'An Invoice Generator that allows you to create and download custom invoices.',
+    link: '#',
+    image: invoice1,
+    tags: ['React', 'CSS', 'JavaScript', 'WordPress'],
   },
+  {
+    title: 'Linconlite',
+    description: 'A freelance project for an Electrical Engineering company that required a modern and sleek design that matched the company theme.',
+    link: 'https://liconlite.webflow.io/',
+    image: linconlite,
+    tags: ['Webflow'],
+  },
+  
+ 
   {
     title: 'Finance Tracking App',
     description: 'A modern finance tracking app that allows you to track your expenses, income and manage your budgets with ease.',
@@ -53,6 +49,13 @@ const projects = [
     link: 'https://www.figma.com/design/nNDLedw0ODWTIZbGPCO9Ve/E-commerce?node-id=0-1&t=wfoIJpqiWrvHBCKe-1',
     image: ecommerce,
     tags: ['Figma'],
+  },
+  {
+    title: 'Latest Movies App',
+    description: 'A fullstack Movie App that allows you to search for movies, view details, and add them to your favorites.',
+    link: 'https://github.com/seanalex0512/Movie-System/tree/main/frontend',
+    image: movies,
+    tags: ['React','Vite','CSS','JavaScript'],
   },
 ];
 
